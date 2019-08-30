@@ -1,0 +1,65 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "Hey","How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Signing out", "bye","See you later", "Goodbye", "I am Leaving", "Have a Good day"],
+         "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!"],
+         "context_set": ""
+        },
+        {"tag": "age",
+         "patterns": ["how old?", "what is your age", "how old are you", "age?"],
+         "responses": ["You will have to ask my creator for that"],
+         "context_set": ""
+        },
+        {"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you", "who are you?",
+               "you are?", "you are"],
+         "responses": ["You can call me Faida", "Faida is my name", "I was named Faida by my creator"],
+         "context_set": ""
+        },
+        {"tag": "credit score",
+         "patterns": ["what is credit score", "credit score?", "do you know credit score?", 
+              "explain credit score", "credit score", "credit score?", "define credit score"],
+         "responses": ["Source Wikipedia.org: A credit score is a numerical expression based on a level analysis of a person's credit files, to represent the credit worthiness of an individual.", 
+                "Credit score is a numerical measure of your ability to borrow and repay loans from financial institutions"],
+         "context_set": ""
+        },
+        {"tag": "credit worthy",
+         "patterns": ["Am I credit worthy?", "credit worthy?", "how do i konw i am credit worthy?",
+              "credit worthiness?","credit ratings","how do I get my credit ratings?", "where do i get my credit ratings", 
+              "how do i know my credit worthiness?"],
+         "responses": ["Ask your bank. They will tell you all you need to know about your credit worthiness."],
+         "context_set": ""
+        },
+        {"tag": "defaulter",
+         "patterns":["who is a defaulter?", "defaulter?", "loan defaulter?", "who is a loan defaulter?"],
+         "responses":["A loan defaulter is a person who has failed to pay his/her loan during the stipulated time period", 
+                "A loan defaulter is anyone who does not clear his loans on time"],
+         "context_set":""
+        },
+        {
+         "tag":"loan",
+         "patterns":["loan", "what is loan?", "what is a loan", "loan?", "define loan"],
+         "responses": ["From Google.com: a thing that is borrowed, especially a sum of money that is expected to be paid back with interest."],
+         "context_set":""
+        },
+        {
+         "tag": "saving",
+         "patterns": ["how to save", "how do i save", "saving methods", "saving", "effective saving"],
+         "responses": ["Saving is the income not spent. How to save??<br>1. Eliminate your debt.  Once you're free from paying interest on your debt, that money can easily be put into savings.<br>2. Set Savings Goals. Set saving targets along with a timeline to make it easier to save.<br>3. Take a 'Staycation'. Instead of long travels that cost you money, why not enjoy yourself at home?<br>4. Create an Interest-Bearing Account<br>5. Annualize Your Spending. See your expenditure in terms of how much per year instead on how much per day."],
+         "context_set":""
+       },
+        {
+         "tag": "improve score",
+         "patterns": ["how do i improve my credit score?", "how to improve credit score",
+              "improve credit score", "how can i improve my credit ratings",
+              "how can i improve my credit score?", "what do i do to improve my credit score?",
+              "can credit scores improve?", "can credit scores be improved?"],
+         "responses": ["1. Pay your bills on time.<br>2. Pay off Debt and Keep Balances Low on Credit Cards and Other Revolving Credit<br>3. Don't Close Unused Credit Cards.<br>4. Don't Apply for Too Much New Credit, Resulting in Multiple Inquiries"],
+         "context_set":""
+        }
+   ]
+}

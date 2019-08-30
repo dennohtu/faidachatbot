@@ -1,0 +1,9 @@
+{% macro render_message(message, category) %}
+<div class="{{category}}-chats">
+    <div class="{{category}}-msg">
+        <div class="{{category}}-msg-inbox">
+            <p>{{ message|safe }}</p>
+        </div>
+    </div>
+</div>
+{% endmacro %}
