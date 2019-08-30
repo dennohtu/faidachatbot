@@ -120,11 +120,15 @@ class Faida:
     self.model = tflearn.DNN(net)
     ##Model complete
 
+    '''
     if os.path.exists('model.tflearn.index'):
       self.model.load("model.tflearn")
     else:
       self.model.fit(self.training, self.output, n_epoch=2000, batch_size=8, show_metric=True)
       self.model.save("model.tflearn")
+    '''
+    self.model.fit(self.training, self.output, n_epoch=2000, batch_size=8, show_metric=True)
+    self.model.save("model.tflearn")
     
 
   def bag_of_words(self, s, words):
