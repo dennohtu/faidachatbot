@@ -25,7 +25,7 @@ Original file is located at
 },...
 ]}
 """
-
+import os.path
 import nltk
 #nltk.download('punkt')
 from nltk.stem.lancaster import LancasterStemmer
@@ -120,11 +120,9 @@ class Faida:
     self.model = tflearn.DNN(net)
     ##Model complete
 
-    try:
-      #self.model.load("model.tflearn")
-      self.model.fit(self.training, self.output, n_epoch=2000, batch_size=8, show_metric=True)
-      self.model.save("model.tflearn")
-    except:
+    if os.path.exists('model.tflearn.index'):
+      self.model.load("model.tflearn")
+    else:
       self.model.fit(self.training, self.output, n_epoch=2000, batch_size=8, show_metric=True)
       self.model.save("model.tflearn")
     
